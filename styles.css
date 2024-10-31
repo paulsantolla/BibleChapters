@@ -108,12 +108,6 @@ a:hover {
     border-radius: 10px; /* Optional: Rounded corners for the content box */
 }
 
-.hero-content-top {
-    top: 0px; /* Adjust this value as needed to control distance from the top */
-}
-.hero-content-bottom {
-    bottom: 0px; /* Adjust this value as needed to control distance from the bottom */
-}
 
 .hero h2 {
     font-size: 3rem;
@@ -250,7 +244,11 @@ footer {
 
 @media (max-width: 768px) {
     .hero-content {
-        padding: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
         background: rgba(0, 0, 0, 0.8); /* Optional: Add a background for better text visibility */
     }
 
