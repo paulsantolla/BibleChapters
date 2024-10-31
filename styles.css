@@ -92,7 +92,6 @@ a:hover {
     left: 0;
     z-index: 1;
     filter: brightness(70%); /* Adjust the brightness for better readability */
-    opacity: 0.9
 }
 
 .hero-content {
@@ -246,4 +245,13 @@ footer {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;     /* Center vertically */
+}
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 8rem;
+        background: rgba(0, 0, 0, 0.8); /* Optional: Add a background for better text visibility */
+    }
+
 }
