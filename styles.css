@@ -242,7 +242,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .hero-content {
         display: flex;
         justify-content: center;
