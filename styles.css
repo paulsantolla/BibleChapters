@@ -78,7 +78,7 @@ a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
     overflow: hidden;
 }
@@ -86,28 +86,48 @@ a:hover {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This ensures the image covers the entire area */
+    object-fit: cover; /* Ensure the image covers the entire area */
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    filter: brightness(70%); /* Adds a slight dark overlay for better text readability */
+    filter: brightness(70%); /* Adjust the brightness for better readability */
 }
 
-.hero-content {
-    position: relative;
+.hero-content-top {
+    position: absolute;
+    top: 0px; /* Adjust this value as needed to control distance from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the content horizontally */
+    width: 90%; /* Ensure the content does not overflow */
+    max-width: 800px; /* Optional: Limit the width to make it responsive */
     z-index: 2;
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: 8rem;
-    backdrop-filter: blur(5px);
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3); /* Optional: Add a background for better text visibility */
+    border-radius: 10px; /* Optional: Rounded corners for the content box */
+}
+
+
+.hero-content-bottom {
+    position: absolute;
+    bottom: 0px; /* Adjust this value as needed to control distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the content horizontally */
+    width: 90%; /* Ensure the content does not overflow */
+    max-width: 800px; /* Optional: Limit the width to make it responsive */
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3); /* Optional: Add a background for better text visibility */
+    border-radius: 10px; /* Optional: Rounded corners for the content box */
 }
 
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
 }
 
 .hero p {
@@ -116,7 +136,7 @@ a:hover {
 }
 
 .cta-button {
-    background-color: #1a73e8;
+    background-color: #6495ED;
     color: #fff;
     padding: 0.75rem 2rem;
     border: none;
