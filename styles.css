@@ -94,9 +94,8 @@ a:hover {
     filter: brightness(70%); /* Adjust the brightness for better readability */
 }
 
-.hero-content-top {
+.hero-content {
     position: absolute;
-    top: 0px; /* Adjust this value as needed to control distance from the top */
     left: 50%;
     transform: translateX(-50%); /* Center the content horizontally */
     width: 90%; /* Ensure the content does not overflow */
@@ -109,20 +108,11 @@ a:hover {
     border-radius: 10px; /* Optional: Rounded corners for the content box */
 }
 
-
+.hero-content-top {
+    top: 0px; /* Adjust this value as needed to control distance from the top */
+}
 .hero-content-bottom {
-    position: absolute;
     bottom: 0px; /* Adjust this value as needed to control distance from the bottom */
-    left: 50%;
-    transform: translateX(-50%); /* Center the content horizontally */
-    width: 90%; /* Ensure the content does not overflow */
-    max-width: 800px; /* Optional: Limit the width to make it responsive */
-    z-index: 2;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.3); /* Optional: Add a background for better text visibility */
-    border-radius: 10px; /* Optional: Rounded corners for the content box */
 }
 
 .hero h2 {
@@ -250,3 +240,20 @@ footer {
     font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+    .hero-content, .hero-content-top, .hero-content-bottom {
+        bottom: 10px; /* Move the content closer to the bottom edge */
+        padding: 1.5rem; /* Add more padding for comfort */
+        width: 95%; /* Ensure the content doesn't touch screen edges */
+        font-size: 1.2rem; /* Slightly larger text size for readability */
+    }
+
+    .cta-button {
+        width: 100%; /* Make buttons full-width on mobile for easier tapping */
+        padding: 1rem; /* Increase button padding for touch comfort */
+        font-size: 1.1rem; /* Make button text larger */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.8rem; /* Scale down headings on mobile */
+    }
